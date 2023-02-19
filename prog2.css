@@ -1,3 +1,11 @@
+
+/*@media(prefers-reduced-motion: no-preference)
+{
+    :root {
+        scroll-behavior: smooth;
+    }
+} анимация прокрутки (не работает)*/
+
 @font-face {
     font-family: 'Montserrat';
     src: url(Montserrat-Regular.ttf);
@@ -42,9 +50,9 @@ h4{
 
 p{
     margin: 0;
-    font-size: 1.2vw;
-    font-family: PTSans;
+    font-size: 2.1vw;
     line-height: 2.3vw;
+    font-family: PTSans;
 }
 
 video::-webkit-media-controls-panel
@@ -334,8 +342,8 @@ video::-webkit-media-controls-panel
     color: aliceblue;
 }
 
-
-.zapis{
+.zapis
+{
     margin-left: 25vw;
     margin-right: 25vw;
     margin-bottom: 2vw;
@@ -349,6 +357,7 @@ video::-webkit-media-controls-panel
     border-color: black;
     border-style: solid;
 }
+
 input
 {
     font-size: 1.4vw;
