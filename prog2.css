@@ -1,11 +1,4 @@
 
-/*@media(prefers-reduced-motion: no-preference)
-{
-    :root {
-        scroll-behavior: smooth;
-    }
-} анимация прокрутки (не работает)*/
-
 @font-face {
     font-family: 'Montserrat';
     src: url(Montserrat-Regular.ttf);
@@ -27,7 +20,7 @@
     src : url(Roboto-Regular.ttf);
 }
 
-body{
+body {
     margin: 0;
     font-size: 1.5vw;
     line-height: 1.6vw;
@@ -55,12 +48,24 @@ p{
     font-family: PTSans;
 }
 
-video::-webkit-media-controls-panel
-{
+input{
+    font-size: 1.4vw;
+    width: 30vw;
+    height: 2vw;
+}
+
+video::-webkit-media-controls-panel{
     display: none !important;
     opacity: 1 !important;
     pointer-events: none;
     background-color: whitesmoke;
+}
+
+.describe
+{
+    font-family: Montserrat;
+    font-size: 1.2vw;
+    line-height: 1.5vw;
 }
 
 .proj_text_content
@@ -101,8 +106,7 @@ video::-webkit-media-controls-panel
     opacity: 0;
     animation: first 1.5s forwards;
 }
-@keyframes first
-{
+@keyframes first{
   0% {opacity: 0;}
   100% {opacity: 1;}
 }
@@ -131,8 +135,7 @@ video::-webkit-media-controls-panel
     opacity: 0;
     animation: second 1.5s forwards;
 }
-@keyframes second
-{
+@keyframes second{
   0% {opacity: 0;}
   100% {opacity: 1;}
 }
@@ -284,40 +287,27 @@ video::-webkit-media-controls-panel
     width: 40vw;
     font-family: Montserrat;
     background-color: beige;
+    cursor: pointer;
 }
 
-.product2
+
+#div1
 {
-    padding: 2vw;
-    border-style: solid;
-    border-radius: 50px;
-    border-color: black;
-    width: 28vw;
-    background-color: beige;
-    display: flex;
-    flex-flow: column;
-    margin-bottom: 2vw;
+  display: none;
+}
+#div2
+{
+  display: none;
+}
+#div3
+{
+  display: none;
+}
+#div4
+{
+  display: none;
 }
 
-.product3
-{
-    margin-top: 1vw;
-    margin-bottom: 4vw;
-    border-style:solid;
-    border-radius: 50px;
-    border-color: black;
-    padding: 1vw;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    background-color: beige;
-}
-
-.conteiner_product1
-{
-    padding: 2vw;
-    display: flex;
-    justify-content: space-between;
-}
 
 .info
 {
@@ -358,12 +348,7 @@ video::-webkit-media-controls-panel
     border-style: solid;
 }
 
-input
-{
-    font-size: 1.4vw;
-    width: 30vw;
-    height: 2vw;
-}
+
 
 /* лабы */
 /* Dropdown Button */
